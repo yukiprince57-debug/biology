@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biology Geological Time Lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Virtual Biology Lab: Geological Time</h1>
+
+    <label>Select Era:</label>
+    <select id="eraSelect" onchange="showPeriods()">
+        <option value="">--Select Era--</option>
+        <option value="Paleozoic">Paleozoic</option>
+        <option value="Mesozoic">Mesozoic</option>
+        <option value="Cenozoic">Cenozoic</option>
+    </select>
+
+    <label>Select Period:</label>
+    <select id="periodSelect" onchange="showEpochs()">
+        <option value="">--Select Period--</option>
+    </select>
+
+    <label>Select Epoch:</label>
+    <select id="epochSelect" onchange="updateConclusion()">
+        <option value="">--Select Epoch--</option>
+    </select>
+
+    <div id="conclusion">
+        Select Era → Period → Epoch to see details here.
+    </div>
+</div>
+
+<script src="biology.js"></script>
+</body>
+</html>
